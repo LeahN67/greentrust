@@ -362,13 +362,13 @@ class ReportGenerator:
 
             # Logo
             try:
-                logo = Image("assets/greentrust_logo.png", width=2.2 * inch, height=0.7 * inch)
+                logo = Image("assets/greenscope_logo.png", width=2.2 * inch, height=0.7 * inch)
                 story.append(logo)
                 story.append(Spacer(1, 8))
             except:
                 pass
 
-            story.append(Paragraph("GreenTrust Insights", title_style))
+            story.append(Paragraph("GreenScope Analytics", title_style))
             story.append(Paragraph("<b>Smart AI. Trusted Climate Impact.</b>", centered_style))  # ✅ FIXED HERE
             story.append(Spacer(1, 20))
 
@@ -432,7 +432,7 @@ class ReportGenerator:
                 story.append(table)
 
             story.append(Spacer(1, 24))
-            story.append(Paragraph("<i>© GreenTrust Insights — Climate Intelligence Platform</i>", centered_style))  # ✅ FIXED HERE
+            story.append(Paragraph("<i>© GreenScope Analytics — Climate Intelligence Platform</i>", centered_style))  # ✅ FIXED HERE
 
             doc.build(story)
             buffer.seek(0)
@@ -447,12 +447,12 @@ class ReportGenerator:
 # ------------------------------
 def main():
     st.set_page_config(
-        page_title="GreenTrust Insights",
-        page_icon="assets/greentrust_favicon.png",
+        page_title="GreenScope Analytics",
+        page_icon="assets/greenscope_favicon.png",
         layout="wide"
     )
     
-    st.title("🌍 GreenTrust Insights")
+    st.title("🌍 GreenScope Analytics")
     st.markdown(f"**{Config.TAGLINE}**")
     st.markdown("---")
 
@@ -581,7 +581,7 @@ def main():
                         st.download_button(
                             "📥 Download PDF",
                             data=pdf,
-                            file_name=f"GreenTrust_Report_{datetime.now().strftime('%Y%m%d')}.pdf",
+                            file_name=f"GreenScope_Report_{datetime.now().strftime('%Y%m%d')}.pdf",
                             mime="application/pdf"
                         )
                     else:
