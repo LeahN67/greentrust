@@ -1,8 +1,31 @@
-streamlit>=1.28.0
-pandas>=1.5.0
-numpy>=1.24.0
-plotly>=5.15.0
-folium>=0.14.0
-streamlit-folium>=0.13.0
-reportlab>=4.0.0
-Pillow>=9.0.0
+# GreenScope Analytics - Requirements
+# Python 3.8+ required
+
+# Core Framework
+streamlit
+
+# Data Processing
+pandas
+numpy
+openpyxl
+
+# Visualization
+plotly
+kaleido
+
+# Mapping
+folium
+streamlit-folium
+
+# PDF Generation
+reportlab
+
+# Image Processing
+Pillow
+
+# Additional Dependencies
+python-dateutil
+pytz
+
+# Optional but recommended for better performance
+streamlit-extras
